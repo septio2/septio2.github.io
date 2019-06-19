@@ -10,16 +10,26 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <title>Budgeting</title>
-	
-	<link rel="shortcut icon" href="https://www.artmajeur.com/medias/standard/l/a/lalujeesart/artwork/10973566_08a6af58-62b2-4a6a-91b0-b695ae0e75e2.jpeg">
+  <style>
+    .shadow {
+      -moz-box-shadow: 3px 3px 5px 6px #ccc;
+      -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+      box-shadow: 3px 3px 5px 6px #ccc;
+    }
+  </style>
+
+  <title>Budgetstack</title>
+
+  <link rel="shortcut icon" type="image/png"
+    href="https://cdn3.iconfinder.com/data/icons/seo-colored-flat-3/128/Currency_exchange_Barter_money_dollar_url_link_conversion-512.png" />
 </head>
 
-<body>
+<body
+  style="background-image: url(https://images.unsplash.com/photo-1526304640581-d334cdbbf45e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=750&q=80);">
 
   <nav class="navbar navbar-expand-lg navbar-light bg-light mb-4">
     <div class="container">
-      <a class="navbar-brand" href="#">Navbar</a>
+      <a class="navbar-brand" href="#">Budgetstack</a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
         aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -38,137 +48,152 @@
   <div class="container">
 
 
-    <div class="card">
+    <div class="card shadow">
       <div class="card-body">
-        <h5 class="card-title">Numbeo</h5>
+
         <div class="input-group flex-nowrap">
           <div class="input-group-prepend">
-            <span class="input-group-text" id="addon-wrapping">Pendapatan</span>
+            <span class="input-group-text" style="background-color: #aed6a0" id="addon-wrapping">Pendapatan</span>
           </div>
           <input type="text" class="form-control" id="pendapatan" placeholder="000.000.000" aria-label="Username"
-            aria-describedby="addon-wrapping">
+            aria-describedby="addon-wrapping" style="background-color:#eafce3">
         </div>
-        <div class="row mt-3">
+        <hr>
+        <h5 class="card-title mt-3">Numbeo</h5>
+        <div class="row shadow">
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
-              <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Investasi</span>
+            <div class="input-group input-group-sm mb-2">
+              <div class="input-group-prepend" style="">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em;  background-color:#d3e4ff;">Investasi</span>
               </div>
               <input type="text" id="investasi" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Sewa Rumah</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Sewa Rumah</span>
               </div>
               <input type="text" id="sewa" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Bahan Makanan</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Bahan Makanan</span>
               </div>
               <input type="text" id="makanan" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Transportasi</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Transportasi</span>
               </div>
               <input type="text" id="transportasi" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Restoran</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Restoran</span>
               </div>
               <input type="text" id="restoran" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Utilitas</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Utilitas</span>
               </div>
               <input type="text" id="utilitas" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Olahraga</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Olahraga</span>
               </div>
               <input type="text" id="olahraga" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Pakaian</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Pakaian</span>
               </div>
               <input type="text" id="pakaian" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
         </div>
         <hr>
         <h5 class="card-title">Li Ka Shing</h5>
 
-        <div class="row">
+        <div class="row shadow">
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Biaya Hidup</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Biaya Hidup</span>
               </div>
               <input type="text" id="biayaHidup" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Investasi</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Investasi</span>
               </div>
               <input type="text" id="invest" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Sosialisasi</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Sosialisasi</span>
               </div>
               <input type="text" id="sosialisasi" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Pengembangan Diri</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Pengembangan Diri</span>
               </div>
               <input type="text" id="pengembangan" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
           <div class="col-md-6">
-            <div class="input-group input-group-sm mb-3">
+            <div class="input-group input-group-sm mb-2">
               <div class="input-group-prepend">
-                <span class="input-group-text" id="inputGroup-sizing-sm">Liburan</span>
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em; background-color:#d3e4ff">Liburan</span>
               </div>
               <input type="text" id="liburan" class="form-control" aria-label="Sizing example input"
-                aria-describedby="inputGroup-sizing-sm" readonly>
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
             </div>
           </div>
         </div>
