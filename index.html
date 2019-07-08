@@ -53,10 +53,10 @@
 
         <div class="input-group flex-nowrap">
           <div class="input-group-prepend">
-            <span class="input-group-text" style="width:9em; background-color: #aed6a0"
+            <span class="input-group-text" style="width:10em; background-color: #aed6a0"
               id="addon-wrapping">Pendapatan</span>
           </div>
-          <input type="text" class="form-control" id="pendapatan" placeholder="Masukkan pendapatan disini" aria-label="Username"
+          <input type="text" class="form-control" id="pendapatan" placeholder="000.000.000" aria-label="Username"
             aria-describedby="addon-wrapping" style="background-color:#eafce3">
         </div>
         <hr>
@@ -64,12 +64,32 @@
         <div class="row shadow">
           <div class="col-md-6">
             <div class="input-group input-group-sm mb-2">
-              <div class="input-group-prepend" style="">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em;  background-color:#d3e4ff;">Perpuluhan</span>
+              </div>
+              <input type="text" id="perpuluhan" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
+            </div>
+          </div>
+          <div class="col-md-6">
+            <div class="input-group input-group-sm mb-2">
+              <div class="input-group-prepend">
                 <span class="input-group-text" id="inputGroup-sizing-sm"
                   style="width:10em;  background-color:#d3e4ff;">Investasi</span>
               </div>
               <input type="text" id="investasi" class="form-control" aria-label="Sizing example input"
                 aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#f2f7ff">
+            </div>
+          </div>
+          <div class="col-md-12">
+            <div class="input-group input-group-sm mb-2">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="inputGroup-sizing-sm"
+                  style="width:10em;  background-color:#f2a7ca;">Transfer</span>
+              </div>
+              <input type="text" id="transfer" class="form-control" aria-label="Sizing example input"
+                aria-describedby="inputGroup-sizing-sm" readonly style="background-color:#ffd9eb">
             </div>
           </div>
           <div class="col-md-6">
@@ -220,35 +240,55 @@
       rupiah.value = formatRupiah(this.value, 'Rp. ');
       var x = rupiah.value.replace(/[^,\d]/g, '');
 
-      investasi.value = persen(30, angka(x));
+      perpuluhan.value = persen(10, angka(x));
+      perpuluhan.value = formatRupiah(perpuluhan.value, 'Rp. ');
+
+      investasi.value = persen(27, angka(x));
       investasi.value = formatRupiah(investasi.value, 'Rp. ');
 
-      y = angka(x) - persen(30, angka(x));
+      x1 = angka(perpuluhan.value);
+      x2 = angka(investasi.value);
+
+      transfer.value = parseInt(x1) + parseInt(x2);
+      transfer.value = formatRupiah(transfer.value, 'Rp. ');
+
+
+      y = angka(x) - persen(37, angka(x));
 
       sewa.value = persen(26.8, y);
       sewa.value = formatRupiah(sewa.value, 'Rp. ');
-      makanan.value = persen(37.10, y);
+      makanan.value = persen(37.10,
+        y);
       makanan.value = formatRupiah(makanan.value, 'Rp. ');
-      transportasi.value = persen(11, y);
+      transportasi.value = persen(11,
+        y);
       transportasi.value = formatRupiah(transportasi.value, 'Rp. ');
-      restoran.value = persen(8.30, y);
+      restoran.value = persen(8.30,
+        y);
       restoran.value = formatRupiah(restoran.value, 'Rp. ');
       utilitas.value = persen(7.30, y);
-      utilitas.value = formatRupiah(utilitas.value, 'Rp. ');
+      utilitas
+        .value = formatRupiah(utilitas.value, 'Rp. ');
       olahraga.value = persen(6, y);
-      olahraga.value = formatRupiah(olahraga.value, 'Rp. ');
+      olahraga.value =
+        formatRupiah(olahraga.value, 'Rp. ');
       pakaian.value = persen(3.5, y);
-      pakaian.value = formatRupiah(pakaian.value, 'Rp. ');
+      pakaian.value = formatRupiah(pakaian
+        .value, 'Rp. ');
 
       biayaHidup.value = persen(30, angka(x));
       biayaHidup.value = formatRupiah(biayaHidup.value, 'Rp. ');
-      invest.value = persen(25, angka(x));
+      invest
+        .value = persen(25, angka(x));
       invest.value = formatRupiah(invest.value, 'Rp. ');
-      sosialisasi.value = persen(20, angka(x));
+      sosialisasi.value =
+        persen(20, angka(x));
       sosialisasi.value = formatRupiah(sosialisasi.value, 'Rp. ');
-      pengembangan.value = persen(15, angka(x));
+      pengembangan.value =
+        persen(15, angka(x));
       pengembangan.value = formatRupiah(pengembangan.value, 'Rp. ');
-      liburan.value = persen(10, angka(x));
+      liburan.value =
+        persen(10, angka(x));
       liburan.value = formatRupiah(liburan.value, 'Rp. ');
     });
 
